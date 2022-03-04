@@ -1,0 +1,15 @@
+.DS_Store
+.env
+firebase-debug.log
+yarn-error.log
+yalc.lock
+.vercel/
+node_modules/
+
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
