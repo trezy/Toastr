@@ -1,2 +1,1 @@
-worker: yarn deploy-commands
-worker: yarn start
+worker: yarn prod-start
