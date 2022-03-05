@@ -17,13 +17,7 @@ import { logger } from '../src/helpers/logger.js'
 
 try {
 	const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN)
-	let routeHandler = 'applicationGuildCommands'
-
-	if (process.env.NODE_ENV === 'production') {
-		routeHandler = 'applicationCommands'
-	}
-
-	const route = Routes[routeHandler](process.env.DISCORD_CLIENT_ID, process.env.DISCORD_GUILD_ID)
+	const route = Routes.applicationGuildCommands(process.env.DISCORD_CLIENT_ID, process.env.DISCORD_GUILD_ID)
 
 	await rest.put(route, {
 		body: Object.values(commands).map(commandObject => {
