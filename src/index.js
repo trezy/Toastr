@@ -1,6 +1,9 @@
 // Module imports
 import 'dotenv/config'
-import { Client, Intents } from 'discord.js'
+import {
+	Client,
+	Intents,
+} from 'discord.js'
 
 
 
@@ -8,6 +11,7 @@ import { Client, Intents } from 'discord.js'
 
 // Local imports
 import { commands } from './commands/index.js'
+import { logger } from './helpers/logger.js'
 import { reactionRoles } from './reactionRoles.js'
 
 
@@ -31,7 +35,7 @@ const client = new Client({
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-	console.log('Ready!')
+	logger.info('Ready!')
 })
 
 client.on('interactionCreate', async interaction => {
@@ -40,7 +44,9 @@ client.on('interactionCreate', async interaction => {
 	const { commandName } = interaction
 
 	if (commands[commandName]) {
+		logger.info(`Executing ${commandName} command...`)
 		await commands[commandName].execute(interaction)
+		logger.info(`Done.`)
 	} else {
 		await interaction.reply('Command not recognized.')
 	}
@@ -51,7 +57,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
 		try {
 			await reaction.fetch()
 		} catch (error) {
-			console.log(error)
+			logger.error(error)
 			return
 		}
 	}
@@ -60,7 +66,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
 		const reactionRole = reactionRoles[reaction.message.id]
 
 		const guild = client.guilds.resolve(reaction.message.guildId)
-		const guildMember = guild.members.resolve(user.id)
+		const guildMember = guild.members.fetch(user)
 		const role = guild.roles.resolve(reactionRole.roleID)
 
 		await guildMember.roles.add(role)
@@ -72,7 +78,7 @@ client.on('messageReactionRemove', async (reaction, user) => {
 		try {
 			await reaction.fetch()
 		} catch (error) {
-			console.log(error)
+			logger.error(error)
 			return
 		}
 	}
