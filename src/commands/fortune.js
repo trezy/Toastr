@@ -7,7 +7,7 @@ import { MessageEmbed } from 'discord.js'
 
 // Local imports
 import { Command } from '../structures/Command.js'
-import { fortunes } from '../../data/fortunes.js'
+import { getRandomFortune } from '../helpers/database.js'
 
 
 
@@ -20,8 +20,7 @@ export default new Command({
 
 	// Functionality
 	execute: async interaction => {
-		const fortuneIndex = Math.floor(Math.random() * fortunes.length)
-		const fortune = fortunes[fortuneIndex] || {}
+		const { data: fortune } = await getRandomFortune()
 
 		const response = new MessageEmbed
 		response.setTitle(`🥠 ${fortune.body}`)
