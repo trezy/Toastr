@@ -50,13 +50,15 @@ export default new Command({
         break
     }
 
-		logger.info(query)
+		logger.info(`Received query: ${query}`)
 
 		const response = new MessageEmbed
 		response.setColor('#cf5ad9')
 		response.setTitle('🔮 The Magic 8-ball says...')
 		response.setDescription(`${magic.answer}. ${emoji}`)
-		response.setFooter({ text: query })
+		response.setFooter({
+			text: query.slice(0, 2048),
+		})
 
 		await interaction.reply({ embeds: [response] })
 	},
