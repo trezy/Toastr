@@ -248,4 +248,183 @@ export const fortunes = [
 		body: 'Truth is what stands the test of experience.',
 		luckyNumbers: [2, 50, 29, 13, 9, 19],
 	},
+
+	{
+		body: 'We must overcome difficulties rather than being overcome by difficulties.',
+		luckyNumbers: [9, 35, 28, 54, 37, 3],
+	},
+
+	{
+		body: 'Trust yourself and anything you do will be right.',
+		luckyNumbers: [53, 51, 8, 2, 48, 16],
+	},
+
+	{
+		body: 'There is a gradual improvement. Feelings are sweet and tender.',
+		luckyNumbers: [16, 23, 18, 5, 45, 36],
+	},
+
+	{
+		body: 'To know oneself, one should assert oneself.',
+		luckyNumbers: [29, 30, 22, 45, 13, 5],
+	},
+
+	{
+		body: 'Things are only impossible until they are not',
+		luckyNumbers: [46, 37, 36, 35, 24, 17],
+	},
+
+	{
+		body: 'Today is the day you let it go. Your chance will come.',
+		luckyNumbers: [28, 1, 7, 23, 47, 52],
+	},
+
+	{
+		body: 'To go too far is as bad as to fall short.',
+		luckyNumbers: [46, 37, 36, 35, 24, 17],
+	},
+
+	{
+		body: 'Turbulence is a life force. It is opportunity. Let\'s love turbulence and use it for change. ',
+		luckyNumbers: [29, 4, 22, 56, 47, 44],
+	},
+
+	{
+		body: 'They cannot take away our self-respect if we do not give it to them.',
+		luckyNumbers: [6, 36, 20, 2, 21, 41],
+	},
+
+	{
+		body: 'Watch out for little problems that could get a lot bigger.',
+		luckyNumbers: [33, 41, 12, 45, 17, 28],
+	},
+
+	{
+		body: 'Time heals most everything. Give it time, time.',
+		luckyNumbers: [13, 51, 41, 3, 2, 26],
+	},
+
+	{
+		body: 'Wealth is a means to an end... not the end itself.',
+		luckyNumbers: [17, 46, 1, 5, 40, 13],
+	},
+
+	{
+		body: 'There are three ingredients in the good life: learning, earning, and yearning.',
+		luckyNumbers: [14, 1, 55, 19, 32, 45],
+	},
+
+	{
+		body: 'There is no way of judging the future but by the past.',
+		luckyNumbers: [29, 37, 21, 46, 33, 24],
+	},
+
+	{
+		body: 'When in anger, sing the alphabet.',
+		luckyNumbers: [39, 7, 17, 18, 41, 19],
+	},
+
+	{
+		body: 'Vary your friendships.',
+		luckyNumbers: [44, 29, 17, 5, 30, 31],
+	},
+
+	{
+		body: 'What you will do matters. All you need is to do it.',
+		luckyNumbers: [51, 55, 26, 21, 50, 3],
+	},
+
+	{
+		body: 'Think of what you will think of 10 years from now.',
+		luckyNumbers: [44, 19, 34, 24, 10, 4],
+	},
+
+	{
+		body: 'There is just one life for each of us: our own.',
+		luckyNumbers: [21, 28, 19, 49, 33, 29],
+	},
+
+	{
+		body: 'There is no greater pleasure than seeing your loved ones prosper.',
+		luckyNumbers: [4, 1, 38, 31, 2, 47],
+	},
+
+	{
+		body: 'Time to collect those good',
+		luckyNumbers: [15, 38, 54, 1, 49, 4],
+	},
+
+	{
+		body: 'To conquer your flaws, you must first accept them.',
+		luckyNumbers: [32, 34, 33, 10, 19, 37],
+	},
+
+	{
+		body: 'What is not started will never get finish.',
+		luckyNumbers: [4, 45, 8, 9, 38, 12],
+	},
+
+	{
+		body: 'This person\'s love is just and true. You may rely on it.',
+		luckyNumbers: [35, 26, 56, 10, 32, 52],
+	},
+
+	{
+		body: 'To guarantee success, act as if it were impossible to fail.',
+		luckyNumbers: [14, 1, 55, 19, 32, 45],
+	},
+
+	{
+		body: 'To forgive others one more time is to create one more blessing for yourself.',
+		luckyNumbers: [54, 39, 15, 25, 34, 9],
+	},
+
+	{
+		body: 'Understand yourself so you may understand others.',
+		luckyNumbers: [11, 2, 34, 7, 47, 19],
+	},
+
+	{
+		body: 'Things may come to those who wait, but only the things left by those who hustle.',
+		luckyNumbers: [31, 18, 48, 36, 21, 2],
+	},
+
+	{
+		body: 'Your future will be happy and productive.',
+	},
+
+	{
+		body: 'There is someone owing so many thanks to you.',
+		luckyNumbers: [21, 17, 9, 13, 47, 25],
+	},
+
+	{
+		body: 'We all live under the same sky, but we don\'t see the same light.',
+		luckyNumbers: [2, 1, 9, 29, 44, 28],
+	},
+
+	{
+		body: 'There is no fear for the one whose thought is not confused.',
+		luckyNumbers: [30, 1, 20, 43, 14, 7],
+	},
+
+	{
+		body: 'What we acquire without sweat we give away without regret.',
+		luckyNumbers: [44, 37, 46, 56, 39, 13],
+	},
+
+	{
+		body: 'There is nothing permanent except change.',
+		luckyNumbers: [12, 4, 40, 19, 2, 17],
+	},
+
+	{
+		body: 'Well done is better than well said.',
+		luckyNumbers: [32, 16, 24, 51, 48, 27],
+	},
+
+	{
+		body: 'To hear, you must listen with your ears, and not your eyes.',
+		luckyNumbers: [44, 4, 39, 53, 28, 8],
+	},
 ]
